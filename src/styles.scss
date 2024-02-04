@@ -3,6 +3,8 @@
 @tailwind components;
 @tailwind utilities;
 @import './styles/theme.scss';
+@import "material-icons/iconfont/material-icons.scss";
+// @import '@sweetalert2/theme-borderless/borderless.scss';
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
