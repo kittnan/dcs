@@ -10,7 +10,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './page/login/login.component';
 import { ProfileComponent } from './page/profile/profile.component';
 import { NgxUiLoaderConfig, NgxUiLoaderHttpModule, NgxUiLoaderModule, NgxUiLoaderRouterModule, PB_DIRECTION, POSITION, SPINNER } from 'ngx-ui-loader';
-import { MasterMachineComponent } from './page/master-machine/master-machine.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 const ngxUiLoaderConfig: NgxUiLoaderConfig = {
@@ -28,7 +28,6 @@ const ngxUiLoaderConfig: NgxUiLoaderConfig = {
     AppComponent,
     LoginComponent,
     ProfileComponent,
-    MasterMachineComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +39,8 @@ const ngxUiLoaderConfig: NgxUiLoaderConfig = {
     FormsModule,
     NgxUiLoaderModule.forRoot(ngxUiLoaderConfig),
     NgxUiLoaderHttpModule,
-    NgxUiLoaderRouterModule
+    NgxUiLoaderRouterModule,
+    HttpClientModule
 
   ],
   providers: [],

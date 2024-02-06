@@ -8,6 +8,7 @@ import { FullAdminModule } from './page/full-admin/full-admin.module';
 import { LoginComponent } from './page/login/login.component';
 import { ProfileComponent } from './page/profile/profile.component';
 
+
 const routes: Routes = [
   {
     path: 'admin',
@@ -42,6 +43,7 @@ const routes: Routes = [
     path:'profile',
     component:ProfileComponent
   },
+
 ];
 
 @NgModule({
