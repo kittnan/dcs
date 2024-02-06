@@ -3,12 +3,7 @@
     <button mat-icon-button (click)="snav.toggle()"><mat-icon>menu</mat-icon></button>
     <h1 class="example-app-name">DEVELOP</h1>
     <div class="flex-auto"></div>
-    <div class="flex justify-around items-center me-4 gap-1">
-      <mat-slide-toggle color="warn" [checked]="theme" (change)="toggleTheme()">
-        <mat-icon *ngIf="theme" class="mat-18">dark_mode</mat-icon>
-        <mat-icon *ngIf="!theme" class="mat-18">light_mode</mat-icon>
-      </mat-slide-toggle>
-    </div>
+
     <button (click)="onLogout()">
       <div class="flex justify-around items-center gap-1">
         <mat-icon class="mat-18">
@@ -52,7 +47,10 @@
 
     <mat-sidenav-content class="p-4">
       <router-outlet></router-outlet>
-    </mat-sidenav-content>
+      <mat-form-field appearance="outline" floatLabel="always">
+        <mat-label>Outline form field</mat-label>
+        <input matInput >
+      </mat-form-field>    </mat-sidenav-content>
   </mat-sidenav-container>
 </div>
 
